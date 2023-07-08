@@ -137,11 +137,11 @@ const Todos = () => {
                   variant="outlined"
                   color="success"
                   size="small"
-                  sx={{ marginTop: 7, marginLeft: 2, color: "black" }}
+                  sx={{ marginTop: 7, marginLeft:1, color: "black" }}
                   onClick={updateSubmit}
                 >
                   <PublishedWithChangesIcon sx={{ fontSize: 20 }} />
-                  Update
+                 
                 </Button>
               </>
             )}
