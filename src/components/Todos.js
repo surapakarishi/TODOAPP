@@ -16,8 +16,6 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import EditIcon from "@mui/icons-material/Edit";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import LibraryAddCheckIcon from "@mui/icons-material/LibraryAddCheck";
 import PublishedWithChangesIcon from "@mui/icons-material/PublishedWithChanges";
 import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
