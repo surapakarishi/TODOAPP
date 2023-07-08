@@ -64,10 +64,6 @@ const Todos = () => {
     setUpdateTodo(todos);
   };
 
-  const cancelUpdate = () => {
-    setUpdateFormVisibility(false);
-  };
-
   const updateSubmit = (e) => {
     e.preventDefault();
 
@@ -77,6 +73,7 @@ const Todos = () => {
       completed: false,
     };
     dispatch(editSubmit(editedObj));
+    setUpdateFormVisibility(false);
   };
 
   return (
@@ -124,7 +121,7 @@ const Todos = () => {
             ) : (
               <>
                 <TextField
-                  sx={{ marginTop: 6, marginLeft: 1, marginBottom: 3 }}
+                  sx={{ marginTop: 6, marginLeft: 5, marginBottom: 3 }}
                   id="outlined-basic"
                   placeholder="update task..."
                   variant="filled"
@@ -143,15 +140,6 @@ const Todos = () => {
                 >
                   <PublishedWithChangesIcon sx={{ fontSize: 20 }} />
                   Update
-                </Button>
-                <Button
-                  variant="outlined"
-                  color="success"
-                  size="small"
-                  sx={{ marginTop: 7, marginLeft: 2, color: "ActiveBorder" }}
-                  onClick={cancelUpdate}
-                >
-                  Done
                 </Button>
               </>
             )}
