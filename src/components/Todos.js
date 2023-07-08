@@ -11,6 +11,7 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+import '../App.css'
 import React, { useState, useEffect } from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddBoxIcon from "@mui/icons-material/AddBox";
@@ -80,6 +81,7 @@ const Todos = () => {
     <>
       <Box
         sx={{
+          backgroundColor:'#4D5656',
           display: "flex",
           justifyContent: "center",
           marginTop: 0,
@@ -92,7 +94,7 @@ const Todos = () => {
         }}
       >
         <TableContainer
-          sx={{ border: "3px solid black", borderRadius: 5 }}
+          sx={{ backgroundColor:'#FBFCFC',border: "3px solid black", borderRadius: 5 }}
           component={Paper}
           elevation={10}
         >
