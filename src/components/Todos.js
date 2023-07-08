@@ -137,7 +137,7 @@ const Todos = () => {
                   variant="outlined"
                   color="success"
                   size="small"
-                  sx={{ marginTop: 7, marginLeft: 2, color: "ActiveBorder" }}
+                  sx={{ marginTop: 7, marginLeft: 2, color: "black" }}
                   onClick={updateSubmit}
                 >
                   <PublishedWithChangesIcon sx={{ fontSize: 20 }} />
